@@ -44,9 +44,6 @@ RUN mkdir -p include/attachments \
 RUN cp include/ost-sampleconfig.php include/ost-config.php \
     && chmod 0666 include/ost-config.php
 
-# Remove setup após primeira instalação (descomenta após instalar)
-RUN rm -rf setup/
-
 EXPOSE 80
 
 CMD ["apache2-foreground"]
